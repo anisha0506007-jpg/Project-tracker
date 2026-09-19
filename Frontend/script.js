@@ -16,7 +16,7 @@ progressForm.addEventListener("submit", async (event) => {
     };
     try {
         const response = await fetch(
-            "http://localhost:5000/progress",
+            "https://project-tracker-7oaq.onrender.com",
             {
                 method: "POST",
                 headers: {
@@ -46,7 +46,7 @@ async function getProgress() {
     try {
         const response =
             await fetch(
-                "http://localhost:5000/progress"
+                "https://project-tracker-7oaq.onrender.com"
             );
         const progress =
             await response.json();
